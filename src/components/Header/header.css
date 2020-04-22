@@ -1,0 +1,10 @@
+.header {
+  width: 200px;
+}
+
+.header ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: space-between;
+}
