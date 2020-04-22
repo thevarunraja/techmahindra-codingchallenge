@@ -1,0 +1,2 @@
+export const SAVE_STUDENT = "SAVE_STUDENT";
+export const DELETE_STUDENT = "DELETE_STUDENT";

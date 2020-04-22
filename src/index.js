@@ -18,7 +18,7 @@ ReactDOM.render(
       <Router>
         <Header />
         <Switch>
-          <Route path="/page3">
+          <Route path="/page3/:slug">
             <Page3 />
           </Route>
           <Route path="/page2">

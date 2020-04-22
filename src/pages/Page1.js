@@ -1,10 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import StudentEntryForm from "../components/StudentEntryForm";
+import { saveStudent } from "../store/actions";
 
 function Page1(props) {
   return (
     <div>
-      <h1>Page 1</h1>
+      <StudentEntryForm
+        handleSaveStudent={student => props.saveStudent(student)}
+      />
     </div>
   );
 }
@@ -13,4 +18,13 @@ const mapStateToprops = state => {
   return { state };
 };
 
-export default connect(mapStateToprops)(Page1);
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(
+    {
+      saveStudent
+    },
+    dispatch
+  );
+};
+
+export default connect(mapStateToprops, mapDispatchToProps)(Page1);

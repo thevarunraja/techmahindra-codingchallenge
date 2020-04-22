@@ -1,0 +1,29 @@
+.form {
+  max-width: 340px;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-field input {
+  width: 200px;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid;
+  font-size: 16px;
+}
+
+.save-button-wrap {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.save-button {
+  border: 1px solid;
+  height: 40px;
+  width: 140px;
+  font-size: 16px;
+}

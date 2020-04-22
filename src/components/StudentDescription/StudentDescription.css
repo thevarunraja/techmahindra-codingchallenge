@@ -1,0 +1,28 @@
+.sd-wrap {
+  display: flex;
+}
+
+.photo {
+  width: 125px;
+  height: 125px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-wrap {
+  margin-left: 10px;
+}
+
+.name-field {
+  display: flex;
+}
+
+.name-field p {
+  margin: 5px;
+}
+
+.name-field p:first-child {
+  width: 130px;
+}
